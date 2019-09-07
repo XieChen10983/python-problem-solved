@@ -1,0 +1,2 @@
+输入的batch格式必须得是TensorFloat格式，需要batch.float()进行转换。
+普通的图像转换之后很有可能是TensorByte的形式，就会出错。
