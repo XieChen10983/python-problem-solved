@@ -1,0 +1,7 @@
+先下载想要装的包 https://github.com/kennethreitz/requests或者opencv
+解压下载的zip包
+进入有setup.py 的目录 ，用windows的cmd
+先执行 python setup.py build
+然后执行 python setup.py install
+如果不出什么问题，提示安装成功
+新建立一个测试项目，import 检测
