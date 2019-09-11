@@ -1,0 +1,2 @@
+在创建自己的dataset类型时，batch必须是 tensors, numbers, dicts or lists着几个类型，而不能是PIL.PngImagePlugin.PngImageFile等类型
+也就是说在设置__getitem__时，返回的item得转换成以上几个类型。
