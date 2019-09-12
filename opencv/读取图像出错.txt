@@ -1,0 +1,15 @@
+TypeError: Image data of dtype object cannot be converted to float
+用cv.imread(path)读取图像时或用cv.imsave()保存图像时，若路径中存在中文字符，则会出现以上的报错。
+
+解决方法：
+img = cv2.imdecode(np.fromfile(path, dtype=np.uint8), 1)
+cv2.imencode('.jpg', src)[1].tofile(save_path)
+
+可以备上一个函数方法：
+# coding: utf-8
+import cv2
+
+def cv_imread(file_path = ""):
+    file_path_gbk = file_path.encode('gbk')        # unicode转gbk，字符串变为字节数组
+    img_mat = cv2.imread(file_path_gbk.decode())   # 字节数组直接转字符串，不解码
+    return img_mat
