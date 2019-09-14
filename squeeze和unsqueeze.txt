@@ -1,0 +1,4 @@
+矩阵或张量有多个维度，例如定义一个大小为[32, 1, 32, 32]的张量a：
+squeeze就是把所有维度大小为1的维度去除，[32, 1, 32, 32] => [32, 32, 32]
+unsqueeze(obj, dim)在obj的第dim个维度添加一个维度，unsqueeze(a, 2) => [32, 1, 1, 32, 32]
+torch中有squeeze和unsqueeze的方法，numpy中有squeeze的方法
