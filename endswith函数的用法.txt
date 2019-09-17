@@ -1,0 +1,6 @@
+endswith()函数为字符串对象的函数，需要输入一个字符串，若字符串对象是以输入的字符串为结尾的（无论长度如何），则返回True；反之，返回False
+
+'nihao.jpg'.endswith('.jpg') ==> True  ==>因此可以用来判断文件的格式。
+'nihao.jpg'.endswith('ao.jpg') ==> True
+'nihao.jpg'.endswith('g') ==> True
+'nihao.jpg'.endswith('.png') ==> False
