@@ -1,0 +1,4 @@
+os.path.expanduser()里面为一个字符串，若字符串的开头为~，则将开头加上电脑用户的目录，一般为C:\Users\
+
+os.path.expanduser('~image.jpg') ==> C:\Users\image.jpg
+os.path.expanduser('image.jpg') ==> image.jpg
