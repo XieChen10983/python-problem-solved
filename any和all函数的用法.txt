@@ -1,0 +1,11 @@
+any()和all()函数里面需要给入一个可迭代的对象，例如元组、列表、ndarray等。
+对于any()函数，当对象中的元素不全为0时，返回True；全为0时返回False。
+对于all()函数，当对象中的元素不全为非0时，返回False；全为非0时返回True。
+
+all([0.1, 0.1, 1]) ==> True
+all([0, 0.1, 0.1]) ==> False 
+any([0, 0, 0.1]) ==> True
+any([0, 0, 0]) ==> False
+all(np.array([1, 2, 3]) == np.array([1, 2, 3]) ==> True
+np.array([1, 2, 3]) == np.array([1, 2, 3]) ==> [True, True, True] 因此常用all函数判断ndarray是否相等。
+any(1 == i for i in range(10)) ==> True
